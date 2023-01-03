@@ -7,10 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="demo"> </p>
+    <p id="demo"></p>
     <script>
-        const car = {type:"fiat", model:"500", color:"red"}
-        document.getElementById("demo").innerHTML="the car type is "+car.color;
+        let mynumber = 2;
+        let text = "";
+        while (mynumber != Infinity){
+            mynumber = mynumber * mynumber;
+            text = text + mynumber + "<br>";
+
+        }
+        document.getElementById("demo").innerHTML=text;
     </script>
 </body>
 </html>

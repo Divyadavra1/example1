@@ -7,10 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="demo"> </p>
+    <p id="demo"></p>
     <script>
-        const car = {type:"fiat", model:"500", color:"red"}
-        document.getElementById("demo").innerHTML="the car type is "+car.color;
+        let text = "the spain strainsp SP";
+        const fat = text.matchAll("sp");
+        document.getElementById("demo").innerHTML = Array.from(fat);
     </script>
 </body>
 </html>

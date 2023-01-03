@@ -7,10 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="demo"> </p>
+    <p id="demo"></p>
     <script>
-        const car = {type:"fiat", model:"500", color:"red"}
-        document.getElementById("demo").innerHTML="the car type is "+car.color;
+        let price = 10;
+        let VAT = 0.25;
+        let total = `Total : ${(price * (1 + VAT)).toFixed(4)}`;
+        document.getElementById("demo").innerHTML=total;
     </script>
 </body>
 </html>

@@ -9,11 +9,9 @@
 <body>
     <p id="demo"></p>
     <script>
-        let x = 9.29;
-        document.getElementById("demo").innerHTML=x.toExponential() + "<br>" +
-        x.toExponential(2) + "<br>" + 
-        x.toExponential(4) + "<br>" +
-        x.toExponential(6);
-    </script>   
+        const points = new Array(40,100,1,2,4,5);
+        // const points = [40,100,1,2,4,5];
+        document.getElementById("demo").innerHTML=points;
+    </script>
 </body>
 </html>

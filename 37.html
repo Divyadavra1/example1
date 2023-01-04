@@ -8,12 +8,13 @@
 </head>
 <body>
     <p id="demo"></p>
+    <p id="demo1"></p>
     <script>
-        let x = 9.29;
-        document.getElementById("demo").innerHTML=x.toExponential() + "<br>" +
-        x.toExponential(2) + "<br>" + 
-        x.toExponential(4) + "<br>" +
-        x.toExponential(6);
-    </script>   
+        const fruits =["Banana", "Apple", "Mango", "chickoo"];
+        document.getElementById("demo").innerHTML=fruits;
+        fruits.sort();
+        fruits.reverse();
+        document.getElementById("demo1").innerHTML=fruits;
+    </script>
 </body>
 </html>

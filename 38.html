@@ -7,13 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="demo"></p>
     <script>
-        let x = 9.29;
-        document.getElementById("demo").innerHTML=x.toExponential() + "<br>" +
-        x.toExponential(2) + "<br>" + 
-        x.toExponential(4) + "<br>" +
-        x.toExponential(6);
-    </script>   
+        const points = [40,12,21,32,44];
+        document.getElementById("demo").innerHTML = points;       
+        points.sort(function(p, w){return p - w});
+        document.getElementById("demo1").innerHTML = points;
+    </script>
 </body>
 </html>

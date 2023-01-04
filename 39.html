@@ -8,19 +8,22 @@
 </head>
 <body>
     <p id="demo"></p>
+    <p id="demo1"></p>
     <button onclick="myfunction()">Sort Alphabet</button>
     <button onclick="myfunction2()">sort Numeric</button>
     <script>
-        const points = [40,100,290,2222,90,8];
+        const points = ["nnjljlkn", "jjbas","knkm","ukokok","amkm"];
+        const point = [2,44,34,66,54,76];
         document.getElementById("demo").innerHTML=points;
+        document.getElementById("demo1").innerHTML=point;
 
         function myfunction(){
             points.sort();
             document.getElementById("demo").innerHTML = points;
         }
         function myfunction2(){
-            points.sort(function(a,b){return a-b});
-            document.getElementById("demo").innerHTML=points;
+            point.sort(function(a,b){return a-b});
+            document.getElementById("demo1").innerHTML=point;
         }
     </script>
 </body>

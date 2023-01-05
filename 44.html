@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myfunction()
+        {
+            let vote;
+            let age = Number(document.getElementById("age").value);
+            if (isNaN(age)){
+                vote = "Input is not a number";
+            }else{
+                vote = (age < 18) ? "too Young" : "old enough";
+
+            }
+            document.getElementById("demo").innerHTML=vote+"too vote";
+        }
+    </script>
+</body>
+</html>

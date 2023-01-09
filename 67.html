@@ -9,13 +9,13 @@
 <body>
     <p id="demo"></p>
     <script>
-        const letters = new Set(["a", "b","c"]);
-        let text ="";
-        letters.forEach(function(value)
-        {
-            text=text+value+"<br>";
-        })
-        document.getElementById("demo").innerHTML=text;
+        const fruits = new Map([
+            ["apples" , 500],
+            ["banana" , 200],
+            ["orange" , 300 ]
+        ])
+        fruits.set("banana" ,100);
+        document.getElementById("demo").innerHTML=fruits.size;
     </script>
 </body>
 </html>

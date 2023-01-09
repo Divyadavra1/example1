@@ -9,13 +9,12 @@
 <body>
     <p id="demo"></p>
     <script>
-        const letters = new Set(["a", "b","c"]);
-        let text ="";
-        letters.forEach(function(value)
+        function myfunction(a,b)
         {
-            text=text+value+"<br>";
-        })
-        document.getElementById("demo").innerHTML=text;
+            return a*b;
+        }
+        document.getElementById("demo").innerHTML=myfunction.toString();
     </script>
+    
 </body>
 </html>

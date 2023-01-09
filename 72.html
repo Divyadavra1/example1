@@ -7,15 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="demo"></p>
     <script>
-        const letters = new Set(["a", "b","c"]);
-        let text ="";
-        letters.forEach(function(value)
-        {
-            text=text+value+"<br>";
-        })
-        document.getElementById("demo").innerHTML=text;
+        (function(){
+            document.getElementById("demo").innerHTML="Hello world";
+        })();
     </script>
 </body>
 </html>

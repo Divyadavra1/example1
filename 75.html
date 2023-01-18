@@ -8,17 +8,13 @@
 </head>
 <body>
     <p id="demo"></p>
-    <button onclick="myfunction()">Try it</button>
     <script>
-        const fruits = ["Banana", "Orange", "Apple"];
-        
-        document.getElementById("demo").innerHTML=fruits;
-function myfunction()
-    {
-        fruits.push("lemon");
-        document.getElementById("demo").innerHTML=fruits;
-    }
+        function myfunction(a,b){
+            return a*b;
+        }
+var x = myfunction(4,2);     
 
+document.getElementById("demo").innerHTML=x;
     </script>
 </body>
 </html>

@@ -1,0 +1,77 @@
+<html>
+<head>
+   <title> Example- add rows to a table using JavaScript DOM </title>
+   <style>
+      table,
+      td,
+      th {
+         border: 1px solid black;
+      }
+   </style>
+</head>
+
+<body>
+   <h2> Adding rows to a table using JavaScript DOM </h2>
+   <p>Click on the button to add the row to the table </p>
+   <button id="btn" onclick="addRow()"> Click me </button>
+   <br><br>
+   <table id="myTable">
+      <thead>
+         <th> Name </th>
+         <th> Age </th>
+         <th> City </th>
+         <th> Course </th>
+      </thead>
+      <tbody id="tableBody">
+         <tr>
+            <td> Alex </td>
+            <td> 20 </td>
+            <td> New York </td>
+            <td> Java </td>
+         </tr>
+         <tr>
+            <td> Tim </td>
+            <td> 18 </td>
+            <td> Boston </td>
+            <td> Python </td>
+         </tr>
+         <tr>
+            <td> Mark </td>
+            <td> 23 </td>
+            <td> San Diego </td>
+            <td> JavaScript </td>
+         </tr>
+      </tbody>
+   </table>
+</body>
+<script>
+   function addRow() {
+      // Get the table body element in which you want to add row
+      let table = document.getElementById("tableBody");
+   
+      // Create row element
+      let row = document.createElement("tr")
+      
+      // Create cells
+      let c1 = document.createElement("td")
+      let c2 = document.createElement("td")
+      let c3 = document.createElement("td")
+      let c4 = document.createElement("td")
+      
+      // Insert data to cells
+      c1.innerText = "Elon"
+      c2.innerText = "42"
+      c3.innerText = "Houston"
+      c4.innerText = "C++"
+      
+      // Append cells to row
+      row.appendChild(c1);
+      row.appendChild(c2);
+      row.appendChild(c3);
+      row.appendChild(c4);
+      
+      // Append row to table body
+      table.appendChild(row)
+   }
+</script>
+</html>
